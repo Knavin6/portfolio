@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Train+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    max-width: 1439px;
+    height: 80px;
+    background-color: rgba(214, 55, 55, 0.39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #C0C0C0;
+    border-radius: 5px;
+}
+
+.download-cv .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-cv .btn-download i {
+    margin-right: 8px;
+}
+
+.download-cv .btn-download:hover {
+    background-color: white;
+    color: #D6D6D6;
+}
+
+/* Main container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d3caca;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.left-content {
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 100%; /* Adjust for smaller screens */
+    max-width: 600px; /* Limit the max width */
+    box-sizing: border-box;
+}
+
+.text-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.text-part {
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-family: 'Train One', cursive;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.text-part h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    color: white;
+    font-size: 36px;
+}
+
+.description {
+    color: #E0E0E0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 400px;
+    font-weight: 200;
+}
+
+.button-part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.left-button:hover {
+    background-color: #0056b3;
+}
+
+.right-content {
+    margin-top: 20px;
+    width: 100%; /* Adjust for smaller screens */
+    max-width: 400px; /* Limit the max width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content .profile-pic {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+/* About container styles */
+.about-container {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color: #ececec;
+    box-sizing: border-box;
+}
+
+.about-left {
+    width: 45%; /* Adjust as needed */
+}
+
+.about-left h2 {
+    font-weight: 800; /* Extra bold */
+    font-size: 24px; /* Adjust size as needed */
+    color: #333;
+}
+
+.about-right {
+    width: 50%; /* Adjust as needed */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.about-right p {
+    margin: 0;
+}
+
+/* Contact form container styles */
+.container.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #004494;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .download-cv {
+        margin-top: 10px;
+    }
+
+    .btn-download {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .text-part h1,
+    .intro-text {
+        text-align: center;
+    }
+
+    .right-content .profile-pic {
+        margin-top: 20px;
+    }
+
+    .about-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+    }
+}

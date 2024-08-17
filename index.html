@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for the download icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo"/>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="download-cv">
+            <a href="#" class="btn-download">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+    </nav>
+    <div class="container" id="home">
+        <div class="left-content">
+            <div class="text-box">
+                <div class="text-part">
+                    <h1 class="intro-text">Hello I am</h1>
+                    <h1>Navin Karma</h1>
+                    <p class="description" style="color: white;">
+                        I am a passionate web developer with a knack for creating engaging and user-friendly digital experiences. With a background in both front-end and back-end technologies.
+                    </p>    
+                </div>
+                <div class="button-part">
+                    <button class="left-button">START CONSULTING</button>
+                    <!-- <ul class="bullet-points">
+                        <li>Bullet Point 1</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+        <div class="right-content">
+            <img src="images/Ellipse 1.png" alt="Profile Picture" class="profile-pic">
+        </div>
+    </div>
+    <div class="container about-container" id="about">
+        <div class="about-left">
+            <h2><b>About Me</b></h2>
+            <p>I like creating cool design projects.</p>
+        </div>
+        <div class="about-right">
+            <p>
+                I am Navin Karma, a passionate web developer with a keen interest in creating dynamic and responsive web applications. My journey in web development started with HTML and CSS, and I have since expanded my skill set to include JavaScript, React, and more.
+            </p>
+        </div>
+    </div>
+    <!-- New Form Section -->
+    <div class="container contact-container" id="contact">
+        <div class="contact-header">
+            <h2>Contact Me</h2>
+            <p>If you have any questions, feel free to reach out to me!</p>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Navin Karma. All Rights Reserved.</p>
+            <!--  -->
+        </div>
+    </footer>
+    
+</body>
+</html>
